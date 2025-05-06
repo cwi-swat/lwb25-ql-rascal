@@ -32,6 +32,7 @@ set[LanguageService] myLanguageContributor() = {
         return parse(#start[Form], input, src);
     }),
     lenses(myLenses),
+    outliner(myOutliner),
     executor(myCommands),
     summarizer(mySummarizer, providesDocumentation = false, providesDefinitions = true
         , providesReferences = false, providesImplementations = false)
@@ -48,6 +49,13 @@ Summary mySummarizer(loc origin, start[Form] input)
 rel[loc,Command] myLenses(start[Form] input) 
   = {<input.src, compileQuestionnaire(input, title="Compile")>};
      
+list[DocumentSymbol] myOutliner(start[Form] input) 
+  = [symbol("<input.top.title>"[1..-1], \module(), input.src,
+        children=[ symbol("<q.name>: <q.\type>", \class(), q.src) 
+          | /Question q := input, q has prompt ]) ];
+        
+
+
 void myCommands(compileQuestionnaire(start[Form] form)) = compile(form);
 
 

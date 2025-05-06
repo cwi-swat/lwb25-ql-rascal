@@ -21,6 +21,7 @@ IDE Features:
 - Hover jump-to-definition
 - Error marking
 - Compile button
+- Outliner
 
 ## QL: a DSL for Questionnaires
 
