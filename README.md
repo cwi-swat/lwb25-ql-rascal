@@ -1,5 +1,7 @@
 ## TinyQL: A minimal but complete implementation of QL in Rascal
 
+**Total source lines of code (SLOC): 352.**
+
 Author: [Tijs van der Storm](mailto:storm@cwi.nl), CWI.
 
 For the original description of QL see the [task description of the language workbench competition 2013](https://github.com/judithmichael/lwb25/blob/main/ChallengeTask.pdf)
@@ -7,8 +9,8 @@ For the original description of QL see the [task description of the language wor
 How to use:
 - Install [VS Code](https://code.visualstudio.com/)
 - Install the [Rascal](https://www.rascal-mpl.org/docs/GettingStarted/DownloadAndInstallation/) extension from the Market place
-- Clone this repository [https://github.com/cwi-swat/lwb25-ql-rascal](https://github.com/cwi-swat/lwb25-ql-rascal)
-- Add the folder `lwb25-ql-rascal` to your VS Code workspace (don't rename the folder).
+- Clone this repository [https://github.com/cwi-swat/tiny-ql](https://github.com/cwi-swat/tiny-ql)
+- Add the folder `tiny-ql` to your VS Code workspace (don't rename the folder).
 - Open `src/IDE.rsc` and click on the link above the `main` function.
 
 Now, the IDE for QL is enabled, and you can open the example questionnaires in `examples`.
@@ -46,5 +48,4 @@ Warnings
 - dead then-branch
 - redeclared with different prompt
 
-**Total source lines of code (SLOC): 352.**
 
