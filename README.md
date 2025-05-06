@@ -23,6 +23,8 @@ IDE Features:
 - Compile button
 - Outliner
 
+Total source lines of code (SLOC): 351.
+
 ## QL: a DSL for Questionnaires
 
 A QL program consists of a form, containing questions. A question can be a normal question, that expects an answer (i.e. is answerable), or a computed question. A computed question has an associated expression which defines its value. 
