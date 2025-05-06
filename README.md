@@ -22,7 +22,25 @@ IDE Features:
 - Hover documentation
 - Error marking
 - Compile button
+- Code folding
 - Outline
+
+Type checker features:
+
+Errors
+- reference to undefined question
+- duplicate question declaration with different type
+- conditional expression not of boolean type 
+- operands of invalid type to operators
+- computed expression not conforming to declared type.
+
+Warnings
+- empty prompts
+- empty if-then-else branches
+- useless conditions
+- dead then branches
+- redeclared with different prompt
+- cyclic data and control dependencies
 
 Total source lines of code (SLOC): 352.
 

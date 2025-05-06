@@ -18,7 +18,7 @@ syntax Type = integer: "integer" | boolean: "boolean" | string: "string";
 syntax Question 
   = ifThen: "if" "(" Expr cond ")" Question then () !>> "else" 
   | ifThenElse: "if" "(" Expr cond ")" Question then "else" Question else
-  | block: "{" Question* questions "}"
+  | @Foldable block: "{" Question* questions "}"
   | answerable: Str prompt Id name ":" Type type
   | computed: Str prompt Id name ":" Type type "=" Expr expr
   ;
