@@ -7,14 +7,20 @@ How to use:
 - Add the folder `lwb25-ql-rascal` to your VS Code workspace (don't rename the folder).
 - Open `src/IDE.rsc` and click on the link above the `main` function.
 
-Now the IDE for QL is enabled, and you can open the example questionnaires in `examples`.
+Now, the IDE for QL is enabled, and you can open the example questionnaires in `examples`.
 
-Features:
+Code overview:
+- `Syntax.rsc`: grammar for QL
+- `Resolve.rsc`: name resolution
+- `Check.rsc`: type checking and cyclic dependency checking
+- `Compile.rsc`: compilation to HTML and Javascript
+- `IDE.rsc`: IDE boilerplate
+
+IDE Features:
 - Syntax highlighting
 - Hover jump-to-definition
-- Type checker with marking of errors and warnings
-- Compilation to HTML and JS
-
+- Error marking
+- Compile button
 
 ## QL: a DSL for Questionnaires
 
