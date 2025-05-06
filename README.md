@@ -46,5 +46,5 @@ Warnings
 - dead then-branch
 - redeclared with different prompt
 
-Total source lines of code (SLOC): 352.
+**Total source lines of code (SLOC): 352.**
 
