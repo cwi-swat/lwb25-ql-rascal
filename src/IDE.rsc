@@ -8,8 +8,6 @@ module IDE
 import util::LanguageServer;
 import util::Reflective;
 import util::IDEServices;
-import IO;
-import ValueIO;
 import List;
 
 import Syntax;
@@ -34,7 +32,7 @@ set[LanguageService] myLanguageContributor() = {
     lenses(myLenses),
     outliner(myOutliner),
     executor(myCommands),
-    summarizer(mySummarizer, providesDocumentation = false, providesDefinitions = true
+    summarizer(mySummarizer, providesDocumentation = true, providesDefinitions = true
         , providesReferences = false, providesImplementations = false)
 };
 
@@ -43,7 +41,10 @@ data Command = compileQuestionnaire(start[Form] form);
 
 Summary mySummarizer(loc origin, start[Form] input) 
   = summary(origin, messages = {<m.at, m> | Message m <- check(input) }
-      , definitions=resolve(input).useDef);
+      , definitions=g.useDef
+      , documentation={ <u, "<t>"> | <u, str x> <- g.uses, <x, Type t> <- env})
+    when RefGraph g := resolve(input),
+      TEnv env := collect(input.top);
 
 
 rel[loc,Command] myLenses(start[Form] input) 

@@ -18,12 +18,13 @@ Code overview:
 
 IDE Features:
 - Syntax highlighting
-- Hover jump-to-definition
+- Jump-to-definition
+- Hover documentation
 - Error marking
 - Compile button
-- Outliner
+- Outline
 
-Total source lines of code (SLOC): 351.
+Total source lines of code (SLOC): 352.
 
 ## QL: a DSL for Questionnaires
 
