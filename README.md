@@ -14,7 +14,7 @@ Code overview:
 - `Resolve.rsc`: name resolution
 - `Check.rsc`: type checking and cyclic dependency checking
 - `Compile.rsc`: compilation to HTML and Javascript
-- `IDE.rsc`: IDE boilerplate
+- `IDE.rsc`: IDE wiring
 
 IDE Features:
 - Syntax highlighting
