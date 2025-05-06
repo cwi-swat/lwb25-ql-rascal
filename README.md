@@ -9,6 +9,11 @@ How to use:
 
 Now the IDE for QL is enabled, and you can open the example questionnaires in `examples`.
 
+Features:
+- Syntax highlighting
+- Hover jump-to-definition
+- Type checker with marking of errors and warnings
+- Compilation to HTML and JS
 
 
 ## QL: a DSL for Questionnaires
