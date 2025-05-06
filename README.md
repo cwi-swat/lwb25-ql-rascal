@@ -1,4 +1,4 @@
-## A minimal but complete implementation of QL in Rascal
+## TinyQL: A minimal but complete implementation of QL in Rascal
 
 Author: [Tijs van der Storm](mailto:storm@cwi.nl), CWI.
 

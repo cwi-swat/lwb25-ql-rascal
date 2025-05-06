@@ -1,4 +1,4 @@
-Project-Name: lwb25-ql-rascal
+Project-Name: tiny-ql
 Source: src
 Require-Libraries: |lib://rascal-lsp|
 

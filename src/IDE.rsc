@@ -20,7 +20,7 @@ import ParseTree;
 void main() {
     registerLanguage(
         language(
-            pathConfig(srcs = [|std:///|, |project://lwb25-ql-rascal/src|]),
+            pathConfig(srcs = [|std:///|, |project://tiny-ql/src|]),
             "QL", "myql", "IDE", "myLanguageContributor"));
 }
 
