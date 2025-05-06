@@ -1,7 +1,19 @@
+## A minimal but complete implementation of QL in Rascal
+
+How to use:
+- Install [VS Code](https://code.visualstudio.com/)
+- Install the Rascal extension from the Market place
+- Clone this repository [https://github.com/cwi-swat/lwb25-ql-rascal](https://github.com/cwi-swat/lwb25-ql-rascal)
+- Add the folder `lwb25-ql-rascal` to your VS Code workspace (don't rename the folder).
+- Open `src/IDE.rsc` and click on the link above the `main` function.
+
+Now the IDE for QL is enabled, and you can open the example questionnaires in `examples`.
+
+
 
 ## QL: a DSL for Questionnaires
 
-The workshop is based on a DSL for questionnaires, called QL. A QL program consists of a form, containing questions. A question can be a normal question, that expects an answer (i.e. is answerable), or a computed question. A computed question has an associated expression which defines its value. 
+A QL program consists of a form, containing questions. A question can be a normal question, that expects an answer (i.e. is answerable), or a computed question. A computed question has an associated expression which defines its value. 
 
 Both kinds of questions have a prompt (to show to the user), an identifier (its name), and a type. The language supports boolean, integer and string types.
 
