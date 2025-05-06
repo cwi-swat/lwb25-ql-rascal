@@ -2,7 +2,7 @@
 
 How to use:
 - Install [VS Code](https://code.visualstudio.com/)
-- Install the Rascal extension from the Market place
+- Install the [Rascal](https://www.rascal-mpl.org/docs/GettingStarted/DownloadAndInstallation/) extension from the Market place
 - Clone this repository [https://github.com/cwi-swat/lwb25-ql-rascal](https://github.com/cwi-swat/lwb25-ql-rascal)
 - Add the folder `lwb25-ql-rascal` to your VS Code workspace (don't rename the folder).
 - Open `src/IDE.rsc` and click on the link above the `main` function.
