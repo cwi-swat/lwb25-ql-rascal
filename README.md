@@ -1,5 +1,7 @@
 ## A minimal but complete implementation of QL in Rascal
 
+Author: [Tijs van der Storm](mailto:storm@cwi.nl), CWI.
+
 For the original description of QL see the [task description of the language workbench competition 2013](https://github.com/judithmichael/lwb25/blob/main/ChallengeTask.pdf)
 
 How to use:
@@ -33,16 +35,16 @@ Errors
 - reference to undefined question
 - duplicate question declaration with different type
 - conditional expression not of boolean type 
-- operands of invalid type to operators
+- operands of invalid type to operator
 - computed expression not conforming to declared type.
+- cyclic data and control dependencies
 
 Warnings
-- empty prompts
-- empty if-then-else branches
-- useless conditions
-- dead then branches
+- empty prompt
+- empty then/else-branch
+- useless condition
+- dead then-branch
 - redeclared with different prompt
-- cyclic data and control dependencies
 
 Total source lines of code (SLOC): 352.
 
