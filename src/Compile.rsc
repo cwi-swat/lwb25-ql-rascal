@@ -143,7 +143,7 @@ str expr2js((Expr)`<Expr x> * <Expr y>`) = "(<expr2js(x)> * <expr2js(y)>)";
 str expr2js(e:(Expr)`<Expr x> / <Expr y>`) 
   = "(function () { 
     '   const div = <expr2js(y)>; 
-    '   if (div == 0) {
+    '   if (div === 0) {
     '      alert(\'division by zero: <e>\');
     '      return 0;
     '   }
