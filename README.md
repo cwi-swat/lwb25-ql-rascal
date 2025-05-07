@@ -1,6 +1,6 @@
 ## TinyQL: A minimal but complete implementation of QL in Rascal
 
-**Total source lines of code (SLOC): 352.**
+**Total source lines of code (SLOC): 359.**
 
 Author: [Tijs van der Storm](mailto:storm@cwi.nl), CWI.
 
