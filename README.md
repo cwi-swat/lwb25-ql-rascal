@@ -49,3 +49,8 @@ Warnings
 - redeclared with different prompt
 
 
+### Notes
+
+Division by zero is caught at run time (an alert will be shown), and 0 will be returned.
+
+Mutual exclusion "bugs" (see `mutual.myql` for an example) are detected at run time and logged to the console.
