@@ -149,10 +149,11 @@ set[Message] check(e:(Expr)`<Id x>`, TEnv env) = {error("undefined question", x.
 
 set[Message] check((Expr)`(<Expr e>)`, TEnv env) = check(e, env);
 
+set[Message] expect(Expr x, Type expected, TEnv env)
+    = { error("invalid operand", x.src) | expected !:= typeOf(x, env) };
 
 set[Message] checkArith(Expr x, Expr y, TEnv env)
-    = { error("invalid operand", x.src) | (Type)`integer` !:= typeOf(x, env) }
-    + { error("invalid operand", y.src) | (Type)`integer` !:= typeOf(y, env) }
+    = expect(x, (Type)`integer`, env) + expect(y, (Type)`integer`, env)
     + check(x, env) + check(y, env);
 
 set[Message] check(e:(Expr)`<Expr x> * <Expr y>`, TEnv env) = checkArith(x, y, env);
@@ -180,8 +181,7 @@ set[Message] check(e:(Expr)`<Expr x> == <Expr y>`, TEnv env) = checkEqNeq(e, x, 
 set[Message] check(e:(Expr)`<Expr x> != <Expr y>`, TEnv env) = checkEqNeq(e, x, y, env);
 
 set[Message] checkLogic(Expr x, Expr y, TEnv env) 
-    = { error("invalid operand", x.src) | (Type)`boolean` !:= typeOf(x, env) }
-    + { error("invalid operand", y.src) | (Type)`boolean` !:= typeOf(y, env) }
+    = expect(x, (Type)`boolean`, env) + expect(y, (Type)`boolean`, env)
     + check(x, env) + check(y, env);
 
 set[Message] check(e:(Expr)`<Expr x> && <Expr y>`, TEnv env) = checkLogic(x, y, env);
